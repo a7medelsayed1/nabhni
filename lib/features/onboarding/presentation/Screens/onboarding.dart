@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:nabhni/core/Route/routes.dart';
+import 'package:nabhni/core/extension/routes.dart';
 import 'package:nabhni/core/images.dart';
-import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
+import 'package:nabhni/features/common/widgets/custom_button.dart';
 import 'package:nabhni/features/onboarding/models/onboarding_details.dart';
 import 'package:nabhni/features/onboarding/models/onboarding_model.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -45,25 +47,15 @@ class _OnboardingState extends State<Onboarding> {
               ),
               Text(
                 onboardingDetail[index].title,
-                style: Textutils.boardingtitle,
+                style: Textutils.logcyan,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: R.sW(context, 16)),
                 child: Text(onboardingDetail[index].body,style: Textutils.boardingbody,),
               ),
               SizedBox(height: R.sH(context, 80)),
-              ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      fixedSize: Size(R.sW(context,350), R.sH(context, 57)),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)),
-                      backgroundColor: Mycolors.mybuttoncolor),
-                  onPressed: () {},
-                  child: Text(
-                    "Next",
-                    style: Textutils.boardingbutton,
-                  )),
-              const Buttonwidget()
+               Custombutton(text:"Next",route: ()=>context.pushName(Routes.login),),
+               Buttonwidget(text:"skip")
             ],
           ),
         ),
@@ -72,5 +64,7 @@ class _OnboardingState extends State<Onboarding> {
     ));
   }
 }
+
+
 
 

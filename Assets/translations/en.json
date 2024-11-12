@@ -1,0 +1,19 @@
+{
+    "boarding": {
+      "title": ""
+    },
+    "auth": {
+      "signIn_title": "Sign In",
+      "signIn_subtitle": "Welcome back to Nabheni!",
+      "email": "Email",
+      "password": "Password",
+      "forget_password": "Forgot Password?",
+      "remember me": "Remember Me",
+      "or": "Or via",
+      "logwithphone": "Sign in with Phone Number",
+      "logwithgoogle": "Sign in with Google",
+      "new account": "Create New Account"
+    },
+    "home page": "Home"
+  }
+  
