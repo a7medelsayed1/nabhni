@@ -26,11 +26,11 @@ class LocationPerScreen extends StatelessWidget {
             Text("من خلال تحديد موقعك، يمكنك الوصول إلى ميزات مثل إشعارات انقطاع الخدمة وتحديد أقرب مراكز الصيانة.",style: Textutils.loginsuptitle,),
             Padding(
               padding:  EdgeInsets.only(top: R.sH(context, 100)),
-              child: Custombutton(text: "السماح بالوصول", route:()=> context.pop() ),
+              child: Custombutton(text: "السماح بالوصول", route:()=> context.pushName(Routes.home) ),
             ),
             Center(
               child: TextButton(
-                      onPressed: () =>context.pushName(Routes.login),
+                      onPressed: () =>context.pushName(Routes.home),
                       child: Text(
                         "ليس الآن",
                         style: Textutils.logcyan,

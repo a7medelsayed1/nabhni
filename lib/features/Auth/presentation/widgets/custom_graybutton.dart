@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nabhni/core/Route/routes.dart';
 import 'package:nabhni/core/extension/routes.dart';
+import 'package:nabhni/core/images.dart';
 import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
@@ -24,10 +25,11 @@ class CustomGraybutton extends StatelessWidget {
             child: Row(
               children: [
                 const SizedBox(width: 40,),
+                 IconButton(icon: Image.asset(Images.google),onPressed: (){},),
                 Text(
                   text,
                   style: Textutils.loginsuptitle,
-                ),const Icon(Icons.phone_android),
+                ),
               ],
             ),
           )),

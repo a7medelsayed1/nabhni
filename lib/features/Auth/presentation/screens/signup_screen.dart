@@ -7,6 +7,7 @@ import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
 import 'package:nabhni/features/Auth/presentation/widgets/custom_graybutton.dart';
 import 'package:nabhni/features/Auth/presentation/widgets/custom_textfield.dart';
+import 'package:nabhni/features/Auth/presentation/widgets/custom_transbutton.dart';
 import 'package:nabhni/features/common/widgets/custom_button.dart';
 
 class SignupScreen extends StatelessWidget {
@@ -66,7 +67,7 @@ class SignupScreen extends StatelessWidget {
               padding:  EdgeInsets.only(top: R.sH(context, 90)),
               child: Custombutton(
                 text: "التالي",
-                route: () => context.pushName(Routes.loginsuccess),
+                route: () => context.pushName(Routes.signupsecond),
               ),
             ),
             Padding(
@@ -76,10 +77,13 @@ class SignupScreen extends StatelessWidget {
                 style: Textutils.loginsuptitle,
               ),
             ),
-            CustomGraybutton(
-              text: 'التسجيل باستخدام رقم الهاتف',
+            Padding(
+              padding: const EdgeInsets.only(bottom: 12.0),
+              child: CustomTransbutton(
+                text: 'التسجيل باستخدام رقم الهاتف', route: ()=>context.pushName(Routes.loginsuccess),
+              ),
             ),
-            CustomGraybutton(text: "التسجيل باستخدام حساب جوجل"),
+            CustomTransbutton(text: "التسجيل باستخدام حساب جوجل",route: ()=>context.pushName(Routes.loginsuccess)),
            
           ],
         ),

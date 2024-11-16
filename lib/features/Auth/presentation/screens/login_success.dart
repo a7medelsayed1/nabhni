@@ -21,8 +21,8 @@ class LoginSuccess extends StatelessWidget {
             Text("تم تسجيل الدخول بنجاح",style: Textutils.logintitle,),
             Text("يمكنك الآن التجول في خدمات التطبيق بكل سهولة. ",style: Textutils.loginsuptitle,),
             Padding(
-              padding:  EdgeInsets.only(top: R.sH(context, 35),bottom: R.sH(context, 150)),
-              child: SvgPicture.asset(Images.onboard1),
+              padding:  EdgeInsets.only(top: R.sH(context, 35),bottom: R.sH(context, 102)),
+              child: SvgPicture.asset(Images.success),
             ),
             Custombutton(text: "الصفحه الرئيسيه", route:()=> context.pushName(Routes.location) )
           

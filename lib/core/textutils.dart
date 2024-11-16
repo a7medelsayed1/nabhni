@@ -40,5 +40,10 @@ class Textutils {
   color: Mycolors.titlecolor,
   fontWeight:FontWeight.w700,
   );
+   static TextStyle get forgotpass => const TextStyle(
+  fontSize: 12,
+  color: Mycolors.suptitlecolor,
+  fontWeight:FontWeight.w400,
+  );
 
 }
