@@ -51,7 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 alignment: Alignment.topRight,
                 child: Text(
                   "مرحبا بعودتك مره اخري في نبهني",
-                  style: Textutils.loginsuptitle,
+                  style: Textutils.suptitlebold16,
                 )),
             SizedBox(
               height: R.sH(context, 40),
@@ -114,7 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 "او عن طريق",
-                style: Textutils.loginsuptitle,
+                style: Textutils.suptitlebold16,
               ),
             ),
             CustomTransbutton(text: "التسجيل باستخدام حساب جوجل",route: () => context.pushName(Routes.loginsuccess),),

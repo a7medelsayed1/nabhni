@@ -7,6 +7,7 @@ class Routes {
   static const String signup="/signup";
   static const String signupsecond="/signupsecond";
   static const String home="/home";
+  static const String phone="/phone";
 
 
 

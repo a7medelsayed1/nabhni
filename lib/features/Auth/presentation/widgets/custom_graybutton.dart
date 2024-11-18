@@ -28,7 +28,7 @@ class CustomGraybutton extends StatelessWidget {
                  IconButton(icon: Image.asset(Images.google),onPressed: (){},),
                 Text(
                   text,
-                  style: Textutils.loginsuptitle,
+                  style: Textutils.suptitlebold16,
                 ),
               ],
             ),

@@ -19,7 +19,7 @@ class LoginSuccess extends StatelessWidget {
         child: Center(
           child: Column(children: [
             Text("تم تسجيل الدخول بنجاح",style: Textutils.logintitle,),
-            Text("يمكنك الآن التجول في خدمات التطبيق بكل سهولة. ",style: Textutils.loginsuptitle,),
+            Text("يمكنك الآن التجول في خدمات التطبيق بكل سهولة. ",style: Textutils.suptitlebold16,),
             Padding(
               padding:  EdgeInsets.only(top: R.sH(context, 35),bottom: R.sH(context, 102)),
               child: SvgPicture.asset(Images.success),

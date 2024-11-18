@@ -106,7 +106,7 @@ class _OnboardingState extends State<Onboarding> {
                     child: Text(
                       textAlign:TextAlign.center ,
                       onboardingDetail[index].body,
-                      style: Textutils.loginsuptitle,
+                      style: Textutils.suptitlebold16,
                     ),
                   ),
                   Padding(

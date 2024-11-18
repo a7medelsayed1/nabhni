@@ -5,9 +5,10 @@ import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
 
 class CustomTransbutton extends StatelessWidget {
-   CustomTransbutton({super.key,required this.route,required this.text});
+   CustomTransbutton({super.key,required this.route,required this.text,this.mobile});
  VoidCallback route;
  String text;
+ bool? mobile;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
@@ -21,7 +22,7 @@ class CustomTransbutton extends StatelessWidget {
         child:  Row(
               children: [
                  SizedBox(width: R.sW(context, 37),),
-                 IconButton(icon: Image.asset(Images.google),onPressed: (){},),
+                 IconButton(icon:mobile==true?Image.asset(Images.mobile) :Image.asset(Images.google),onPressed: (){},),
                 Text(
                   text,
                   style: Textutils.logcyan,

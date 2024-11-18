@@ -41,7 +41,7 @@ class SignupScreen extends StatelessWidget {
                 alignment: Alignment.topRight,
                 child: Text(
                   "أدخل بياناتك من أجل تسجيل الدخول",
-                  style: Textutils.loginsuptitle,
+                  style: Textutils.suptitlebold16,
                 )),
             SizedBox(
               height: R.sH(context, 40),
@@ -74,13 +74,14 @@ class SignupScreen extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 "او عن طريق",
-                style: Textutils.loginsuptitle,
+                style: Textutils.suptitlebold16,
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 12.0),
               child: CustomTransbutton(
-                text: 'التسجيل باستخدام رقم الهاتف', route: ()=>context.pushName(Routes.loginsuccess),
+                mobile: true,
+                text: 'التسجيل باستخدام رقم الهاتف', route: ()=>context.pushName(Routes.phone),
               ),
             ),
             CustomTransbutton(text: "التسجيل باستخدام حساب جوجل",route: ()=>context.pushName(Routes.loginsuccess)),

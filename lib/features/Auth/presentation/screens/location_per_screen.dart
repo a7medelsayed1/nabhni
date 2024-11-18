@@ -18,12 +18,12 @@ class LocationPerScreen extends StatelessWidget {
         child: Center(
           child: Column(children: [
             Align(alignment: Alignment.centerRight,child: Text("السماح بالوصول إلى الموقع",style: Textutils.logintitle,)),
-            Align(alignment: Alignment.centerRight,child: Text("اسمح لنا بمعرفة موقعك لخدمتك بشكل أفضل.",style: Textutils.loginsuptitle,)),
+            Align(alignment: Alignment.centerRight,child: Text("اسمح لنا بمعرفة موقعك لخدمتك بشكل أفضل.",style: Textutils.suptitlebold16,)),
             Padding(
               padding:  EdgeInsets.only(top: R.sH(context, 35),bottom: R.sH(context, 15)),
               child: SvgPicture.asset(Images.location),
             ),
-            Text("من خلال تحديد موقعك، يمكنك الوصول إلى ميزات مثل إشعارات انقطاع الخدمة وتحديد أقرب مراكز الصيانة.",style: Textutils.loginsuptitle,),
+            Text("من خلال تحديد موقعك، يمكنك الوصول إلى ميزات مثل إشعارات انقطاع الخدمة وتحديد أقرب مراكز الصيانة.",style: Textutils.suptitlebold16,),
             Padding(
               padding:  EdgeInsets.only(top: R.sH(context, 100)),
               child: Custombutton(text: "السماح بالوصول", route:()=> context.pushName(Routes.home) ),

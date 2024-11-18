@@ -46,7 +46,7 @@ class _SignupSecondState extends State<SignupSecond> {
                   alignment: Alignment.topRight,
                   child: Text(
                     "أدخل بياناتك من أجل تسجيل الدخول",
-                    style: Textutils.loginsuptitle,
+                    style: Textutils.suptitlebold16,
                   )),
                   
                
@@ -111,7 +111,7 @@ class _SignupSecondState extends State<SignupSecond> {
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 "او عن طريق",
-                style: Textutils.loginsuptitle,
+                style: Textutils.suptitlebold16,
               ),
             ),
             CustomTransbutton(text: "التسجيل باستخدام حساب جوجل",route: () => context.pushName(Routes.loginsuccess),),
