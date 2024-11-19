@@ -8,8 +8,8 @@ class ConnectivityController {
   ValueNotifier<bool> isOnline = ValueNotifier(true); //false>
   Future<void> checkConnection() async {
     final result = await Connectivity().checkConnectivity();
-    // isConnected(rsult);
-    // Connectivity().onConnectivityChanged.listen(isConnected);
+    isConnected(result.first);
+    // Connectivity().onConnectivityChanged.listen(isConnected as void Function(ConnectivityResult result));
   } //false>
 
   bool isConnected(ConnectivityResult? result) {

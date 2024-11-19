@@ -25,7 +25,7 @@ class _PhoneNumScreenState extends State<PhoneNumScreen> {
         leading: BackButton(),
       ),
       body: Padding(
-        padding: const EdgeInsets.only(right: 20.0, top: 30,left: 20),
+        padding: const EdgeInsets.only(right: 20.0, top: 30, left: 20),
         child: SingleChildScrollView(
           child: Column(children: [
             // Row(
@@ -118,19 +118,23 @@ class _PhoneNumScreenState extends State<PhoneNumScreen> {
                 style: Textutils.fieldlabel,
               )
             ]),
-             Padding(
-                    padding:  EdgeInsets.only(top: R.sH(context,209.0)),
-                    child: Custombutton(text: "ارسال رمز التحقق", route:()=>context.pushName(Routes.login) ),
-                  ),
-                  Padding(
+            Padding(
+              padding: EdgeInsets.only(top: R.sH(context, 209.0)),
+              child: Custombutton(
+                  text: "ارسال رمز التحقق",
+                  route: () => context.pushName(Routes.verify)),
+            ),
+            Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
                 "او عن طريق",
                 style: Textutils.suptitlebold16,
               ),
             ),
-            CustomTransbutton(text: "التسجيل باستخدام حساب جوجل",route: () => context.pushName(Routes.loginsuccess),),
-            
+            CustomTransbutton(
+              text: "التسجيل باستخدام حساب جوجل",
+              route: () => context.pushName(Routes.loginsuccess),
+            ),
           ]),
         ),
       ),

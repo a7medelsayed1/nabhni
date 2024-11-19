@@ -6,6 +6,7 @@ import 'package:nabhni/features/Auth/presentation/screens/login_success.dart';
 import 'package:nabhni/features/Auth/presentation/screens/phone_screen.dart';
 import 'package:nabhni/features/Auth/presentation/screens/signup_screen.dart';
 import 'package:nabhni/features/Auth/presentation/screens/signup_second.dart';
+import 'package:nabhni/features/Auth/presentation/screens/verify_view.dart';
 import 'package:nabhni/features/Home/presentation/screens/home_screen.dart';
 import 'package:nabhni/features/onboarding/presentation/Screens/splash_screen.dart';
 import 'package:nabhni/features/onboarding/presentation/Screens/onboarding.dart';
@@ -22,6 +23,7 @@ static Route<dynamic> onGeneratRoute(RouteSettings settings){
     case Routes.signupsecond: return MaterialPageRoute(builder: (context)=>const SignupSecond());
     case Routes.home: return MaterialPageRoute(builder: (context)=> HomeScreen());
     case Routes.phone: return MaterialPageRoute(builder: (context)=> PhoneNumScreen());
+    case Routes.verify: return MaterialPageRoute(builder: (context)=> const VerifyView());
 
     default: return undifinedroute();
     
