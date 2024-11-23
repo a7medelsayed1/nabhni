@@ -26,29 +26,39 @@ class RechargeScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
               Text("حدد شركة الكهرباء الخاصة بك",style: Textutils.bodybold16.copyWith(fontSize: 18),),
-              Column(
-                children: [
-                  GestureDetector(
-                    onTap: (){
-                      selected=true;
-                    },
-                    child: Container(
-                      height: R.sH(context, 90),
-                      width: R.sW(context, 90),
-                      margin: EdgeInsets.symmetric(vertical: R.sH(context, 12)),
-                      decoration: BoxDecoration(
-                        color: selected==true? Colors.transparent:Mycolors.lightcyan,
-                        border: Border.all(
-                          color: Colors.black
+              Expanded(
+                child: ListView.builder(
+                  itemCount: 6,
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder:(context,index)=> Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    child: Column(
+                      children: [
+                        GestureDetector(
+                          onTap: (){
+                            selected=true;
+                          },
+                          child: Container(
+                          
+                            height: R.sH(context, 90),
+                            width: R.sW(context, 90),
+                            margin: EdgeInsets.symmetric(vertical: R.sH(context, 12)),
+                            decoration: BoxDecoration(
+                              color: selected==true? Colors.transparent:Mycolors.lightcyan,
+                              border: Border.all(
+                                color: Colors.black
+                              ),
+                              borderRadius: BorderRadius.circular(R.sR(context, 12))
+                            ),
+                            child: Image.asset(Images.recharge),
+                          ),
                         ),
-                        borderRadius: BorderRadius.circular(R.sR(context, 12))
-                      ),
-                      child: Image.asset(Images.recharge),
+                        Text("الكهرباء العدادات الذكية")
+                    
+                      ],
                     ),
                   ),
-                  Text("الكهرباء العدادات الذكية")
-
-                ],
+                ),
               )
             ],),
 
