@@ -9,6 +9,14 @@ class Routes {
   static const String signupsecond="/signupsecond";
   static const String home="/home";
   static const String phone="/phone";
+  static const String advices="/advices";
+  static const String recharge="/recharge";
+  static const String inquiry="/inquiry";
+  static const String reports="/reports";
+  static const String news="/news";
+  static const String callcenter="/callcenter";
+
+
 
 
 

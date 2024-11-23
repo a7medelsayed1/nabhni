@@ -35,15 +35,16 @@ class TimerWidget extends StatelessWidget {
               )
               ,Column(
                 children: [
-                  Text('''الوقت المتبقي قبل انقطاع ''',style: Textutils.hello18bold,),
-                 Text('''الكهرباء ''',style: Textutils.hello18bold,textAlign: TextAlign.start,),
+                  Text(''' الوقت المتبقي قبل انقطاع 
+الكهرباء''',style: Textutils.hello18bold,),
+               
 
                 ],
               )
             ],),
           )
           ,Container(
-            height: 56,
+            height: 65,
             width: 186,
             child: Text('''باقي على انقطاع الكهرباء 8 ساعات و 6 دقائق، حيث من المتوقع أن يتم انقطاع الخدمة تمام الساعة 10:00 صباحًا. يرجى الاستعداد قبل انقطاع التيار.''',
             style: Textutils.timer12,),

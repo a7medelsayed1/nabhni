@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:nabhni/core/extension/routes.dart';
 import 'package:nabhni/core/images.dart';
 import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
-import 'package:nabhni/features/Home/presentation/models/griditems.dart';
+import 'package:nabhni/features/Home/models/griditems.dart';
+
+import '../../../../core/Route/routes.dart';
 
 class GridViewItem extends StatelessWidget {
    GridViewItem({
@@ -17,6 +20,8 @@ class GridViewItem extends StatelessWidget {
     Griditems(icon: Images.gridsix, label: "ارشادات و توجيهات"),
 
    ];
+  
+   List<String>navig=[Routes.inquiry,Routes.recharge,Routes.reports,Routes.callcenter,Routes.news,Routes.advices];
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -29,7 +34,10 @@ class GridViewItem extends StatelessWidget {
         itemCount: griditems.length,
         itemBuilder: (context,index){
          return GestureDetector(
-          onTap: (){},
+          onTap: (){
+             // Navigator.push(context, MaterialPageRoute(builder: (context)=>navi[index]));
+                 context.pushName(navig[index])   ;
+          },
            child: Container(
            height: R.sH(context, 100),
            width: R.sW(context, 100),

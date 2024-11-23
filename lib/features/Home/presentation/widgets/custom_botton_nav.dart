@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nabhni/core/images.dart';
 import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
-import 'package:nabhni/features/Home/presentation/models/navitem.dart';
+import 'package:nabhni/features/Home/models/navitem.dart';
 import 'package:nabhni/features/Home/presentation/widgets/navitem.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {

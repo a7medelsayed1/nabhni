@@ -13,6 +13,11 @@ static const navunselected = Color(0xff4D4D4D);
 static const gridcolor = Color(0xffEEF6F7);
 static const gridinsidecolor = Color(0xffDDEEEE);
 static const yellow = Color(0xffFDD03B);
+static const card1 = Color(0xff006B99);
+static const card2 = Color(0xff76B9BC);
+static const card3 = Color(0xffE9B67C);
+static const card4 = Color(0xffB3B3B3);
+static const rechargegrey  = Color(0xffF2F2F2);
 
 
 

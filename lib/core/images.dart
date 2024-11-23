@@ -21,6 +21,12 @@ static const String notification ="Assets/images/notification.png";
 static const String search ="Assets/images/search.png";
 static const String hello ="Assets/images/hello.png";
 static const String flag ="Assets/images/flag.png";
+static const String card1 ="Assets/images/card1.png";
+static const String card2 ="Assets/images/card2.png";
+static const String card3 ="Assets/images/card3.png";
+static const String card4 ="Assets/images/card4.png";
+static const String recharge ="Assets/images/recharge_logo.png";
+
 
 
 

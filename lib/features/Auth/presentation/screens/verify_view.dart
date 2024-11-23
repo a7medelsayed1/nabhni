@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
 import 'package:nabhni/features/Auth/presentation/widgets/timer.dart';
@@ -7,7 +8,8 @@ import 'package:nabhni/features/common/widgets/custom_button.dart';
 import 'package:pinput/pinput.dart';
 
 class VerifyView extends StatelessWidget {
-  const VerifyView({super.key});
+   VerifyView({super.key});
+  bool completed=false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,6 +42,35 @@ class VerifyView extends StatelessWidget {
                 child: Directionality(
                   textDirection: TextDirection.ltr,
                   child: Pinput(
+                    onCompleted: (value) {
+                      completed=true;
+                      print(value);
+                    },
+                    submittedPinTheme: PinTheme(
+                    height: R.sH(context, 55),
+                      width: R.sW(context, 55),
+                      textStyle: Textutils.logintitle.copyWith(fontWeight: FontWeight.w400),
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.black
+                        ),
+                        // color: Mycolors.mybuttoncolor.withOpacity(.3),
+                        color: Color(0xffEEF6F7),
+                        borderRadius: BorderRadius.circular(18)
+                      )
+                    ),
+                    defaultPinTheme: PinTheme(
+                      height: R.sH(context, 55),
+                      width: R.sW(context, 55),
+                      textStyle: Textutils.logintitle.copyWith(fontWeight: FontWeight.w400),
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.black
+                        ),
+                        color: Colors.transparent,
+                        borderRadius: BorderRadius.circular(18)
+                      )
+                    ),
                     length: 5,
                     showCursor: true,
                     onChanged: (val) {},
@@ -50,12 +81,14 @@ class VerifyView extends StatelessWidget {
               SizedBox(
                 height: R.sH(context, R.H(context) / 85),
               ),
-              TimerWidget(onEnd: () {}),
+              TimerWidget(onEnd: () {
+                
+              },),
               SizedBox(
                 height: R.sH(context, R.H(context) / 85),
               ),
 
-              Custombutton(
+               Custombutton(
                 text: "ارسال رمز التحقق",
                 route: () {},
               )

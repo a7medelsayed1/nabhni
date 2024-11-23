@@ -3,7 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
-import 'package:nabhni/features/Home/presentation/models/navitem.dart';
+import 'package:nabhni/features/Home/models/navitem.dart';
 import 'package:nabhni/features/Home/presentation/screens/home_content.dart';
 import 'package:nabhni/features/Home/presentation/widgets/custom_appbar.dart';
 
