@@ -25,6 +25,7 @@ class SettingsScreen extends StatelessWidget {
           children: [
             Row(
               children: [
+                //edit this widgets to two containers with clored border instead of four circle avatars
                 Padding(
                   padding: EdgeInsets.only(left: R.sW(context, 8)),
                   child: CircleAvatar(
