@@ -26,6 +26,23 @@ static const String card2 ="Assets/images/card2.png";
 static const String card3 ="Assets/images/card3.png";
 static const String card4 ="Assets/images/card4.png";
 static const String recharge ="Assets/images/recharge_logo.png";
+static const String support ="Assets/images/support.png";
+static const String message ="Assets/images/message.png";
+static const String email ="Assets/images/email.png";
+static const String qustions ="Assets/images/qustions.png";
+static const String setting1 ="Assets/images/setting1.png";
+static const String setting2 ="Assets/images/setting2.png";
+static const String setting3 ="Assets/images/setting3.png";
+static const String setting4 ="Assets/images/setting4.png";
+static const String setting5 ="Assets/images/setting5.png";
+static const String setting6 ="Assets/images/setting6.png";
+static const String logout ="Assets/images/logout.png";
+static const String insta ="Assets/images/instagram.png";
+static const String face ="Assets/images/facebook.png";
+static const String x ="Assets/images/twitter.png";
+static const String linkedin ="Assets/images/linkedin.png";
+
+
 
 
 

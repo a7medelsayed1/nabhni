@@ -5,7 +5,7 @@ class Textutils {
 
   static TextStyle get logcyan => const TextStyle(
   fontSize:18,
-  color: Mycolors.mybuttoncolor,
+  color: Mycolors.primarycolor,
   fontWeight:FontWeight.w700,
   );
   static TextStyle get boardingbutton => const TextStyle(
@@ -48,10 +48,11 @@ class Textutils {
  static TextStyle get cyan14 => const TextStyle(
     
   fontSize: 14,
-  color: Mycolors.mybuttoncolor,
+  color: Mycolors.primarycolor,
   fontWeight:FontWeight.w700,
   );
     static TextStyle get title22bold => const TextStyle(
+   fontFamily: 'Zain',   
   fontSize: 22,
   color: Mycolors.titlecolor,
   fontWeight:FontWeight.w700,);

@@ -16,8 +16,8 @@ class Buttonwidget extends StatelessWidget {
       child: ElevatedButton(
           
           style: ElevatedButton.styleFrom(
-              side: const BorderSide(color: Mycolors.mybuttoncolor),
-              foregroundColor: Mycolors.mybuttoncolor,
+              side: const BorderSide(color: Mycolors.primarycolor),
+              foregroundColor: Mycolors.primarycolor,
               fixedSize: Size(R.sW(context,110), R.sH(context, 44)),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8)),

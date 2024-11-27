@@ -13,7 +13,7 @@ class CustomTransbutton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
         style: ElevatedButton.styleFrom(
-            side: const BorderSide(color: Mycolors.mybuttoncolor,),
+            side: const BorderSide(color: Mycolors.primarycolor,),
             fixedSize: Size(R.sW(context,350), R.sH(context, 57)),
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(R.sR(context, 12))),

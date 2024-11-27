@@ -17,7 +17,7 @@ class Buttonsmallcyan extends StatelessWidget {
               fixedSize: Size(R.sW(context,110), R.sH(context, 44)),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8)),
-              backgroundColor: Mycolors.mybuttoncolor),
+              backgroundColor: Mycolors.primarycolor),
           onPressed: route,
           child: Text(
             text,

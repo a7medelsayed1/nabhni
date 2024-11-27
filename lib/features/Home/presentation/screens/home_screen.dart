@@ -4,8 +4,10 @@ import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
 import 'package:nabhni/features/Home/models/navitem.dart';
+import 'package:nabhni/features/Home/presentation/screens/callcenter_screen.dart';
 import 'package:nabhni/features/Home/presentation/screens/home_content.dart';
-import 'package:nabhni/features/Home/presentation/widgets/custom_appbar.dart';
+import 'package:nabhni/features/settings/presentation/screens/settings_screen.dart';
+import 'package:nabhni/features/store/presentation/screens/store_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({super.key});
@@ -16,19 +18,19 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   List<Widget> pages = [
-    HomeContent(),
-    Container(),
-    Container(
+   const HomeContent(),
+    const StoreScreen(),
+   const CallcenterScreen(
     ),
-    Container(
+   const SettingsScreen(
     ),
   ];
 
   List<Navitem> navitem = [
-    Navitem(label: "الرئيسيه", icon: Icon(FontAwesomeIcons.house)),
-    Navitem(label: "المتجر", icon: Icon(FontAwesomeIcons.bagShopping)),
-    Navitem(label: "الدعم", icon: Icon(FontAwesomeIcons.solidMessage)),
-    Navitem(label: "الاعدادات", icon: Icon(FontAwesomeIcons.gear)),
+    Navitem(label: "الرئيسيه", icon:const Icon(FontAwesomeIcons.house)),
+    Navitem(label: "المتجر", icon:const Icon(FontAwesomeIcons.bagShopping)),
+    Navitem(label: "الدعم", icon:const Icon(FontAwesomeIcons.solidMessage)),
+    Navitem(label: "الاعدادات", icon:const Icon(FontAwesomeIcons.gear)),
   ];
 
   int _index = 0;
@@ -36,12 +38,10 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppbar(),
+      resizeToAvoidBottomInset: false,
+      // appBar: CustomAppbar(),
       bottomNavigationBar: _buildBottomNav(context),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: pages[_index],
-      ),
+      body: pages[_index],
     );
   }
 
@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
       showUnselectedLabels: true,
       type: BottomNavigationBarType.fixed,
         unselectedItemColor: Mycolors.navunselected,
-        selectedItemColor: Mycolors.mybuttoncolor,
+        selectedItemColor: Mycolors.primarycolor,
         backgroundColor: Mycolors.lightcyan,
         currentIndex: _index,
         onTap: (value) {
@@ -71,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                      Container(
                       padding: EdgeInsets.symmetric(horizontal: R.sW(context, 8)),
                       decoration: BoxDecoration(
-                        color: Mycolors.mybuttoncolor,
+                        color: Mycolors.primarycolor,
                         borderRadius: BorderRadius.circular(R.sR(context,8))
                       ),
                       margin: EdgeInsets.only(top: R.sH(context, 8)),

@@ -7,7 +7,7 @@ import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
 import 'package:nabhni/features/Auth/presentation/widgets/custom_graybutton.dart';
-import 'package:nabhni/features/Auth/presentation/widgets/custom_textfield.dart';
+import 'package:nabhni/features/common/widgets/custom_textfield.dart';
 import 'package:nabhni/features/Auth/presentation/widgets/custom_transbutton.dart';
 import 'package:nabhni/features/common/widgets/custom_button.dart';
 import 'package:nabhni/core/textutils.dart';
