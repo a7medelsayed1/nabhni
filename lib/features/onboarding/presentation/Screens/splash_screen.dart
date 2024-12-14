@@ -22,7 +22,7 @@ class _Splashscreen extends State<Splashscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: SvgPicture.asset("Assets/images/logo.svg",height:R.sH(context,76),width: R.sH(context,214)),
+        child: SvgPicture.asset("assets/images/logo.svg",height:R.sH(context,76),width: R.sH(context,214)),
       ),
     );
   }

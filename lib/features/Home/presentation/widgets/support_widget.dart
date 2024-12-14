@@ -8,14 +8,14 @@ class SupportWidget extends StatelessWidget {
     super.key,
     required this.image,
     required this.text,
-    this.ontap
+    this.onTap
   });
   String image,text;
-  GestureTapCallback? ontap;
+  GestureTapCallback? onTap;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap:ontap ,
+      onTap:onTap ,
       child: Container(
         margin: EdgeInsets.only(bottom: R.sH(context, 20)),
         padding: EdgeInsets.only(top: R.sH(context, 21),bottom: R.sH(context, 21),right: R.sW(context, 12),left: R.sW(context, 4)),

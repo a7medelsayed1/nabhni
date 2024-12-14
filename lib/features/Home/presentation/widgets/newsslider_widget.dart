@@ -21,7 +21,7 @@ class NewsSlider extends StatelessWidget {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(R.sR(context, 16)),
               image: DecorationImage(
-                  image: AssetImage("Assets/images/Frame 910.png"))),
+                  image: AssetImage("assets/images/Frame 910.png"))),
           // child: Image.asset("Assets/images/Frame 910.png",fit:BoxFit.cover ,),
         ),
         Container(
@@ -33,7 +33,7 @@ class NewsSlider extends StatelessWidget {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(R.sR(context, 8)),
               image: DecorationImage(
-                  image: AssetImage("Assets/images/Frame 910.png"))),
+                  image: AssetImage("assets/images/Frame 910.png"))),
           // child: Image.asset("Assets/images/Frame 910.png",fit:BoxFit.cover ,),
         )
       ],

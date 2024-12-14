@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:nabhni/core/extension/routes.dart';
 import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
 import 'package:nabhni/features/common/widgets/appbar.dart';
-import 'package:nabhni/features/common/widgets/custom_button.dart';
 import 'package:nabhni/features/settings/models/personal_model.dart';
 import 'package:nabhni/features/settings/presentation/widgets/birth_dialog.dart';
 import 'package:nabhni/features/settings/presentation/widgets/gender_dialog.dart';
@@ -22,7 +20,7 @@ class PeronalinformationScreen extends StatelessWidget {
     PersonalModel(title: 'تاريخ الميلاد', subtitle: 'تاريخ الميلاد'),
   ];
   List<Widget>dialogs=[
-    NameDialog(),
+    const NameDialog(),
     Container(),
     PhoneDialog(),
     GenderDialog(),

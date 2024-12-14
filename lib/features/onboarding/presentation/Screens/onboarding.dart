@@ -1,12 +1,11 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:nabhni/core/Route/routes.dart';
+import 'package:nabhni/core/app_locale.dart';
 import 'package:nabhni/core/extension/routes.dart';
 import 'package:nabhni/core/images.dart';
-import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
-import 'package:nabhni/features/Auth/presentation/screens/login_screen.dart';
-import 'package:nabhni/features/common/widgets/custom_button.dart';
 import 'package:nabhni/features/onboarding/models/onboarding_details.dart';
 import 'package:nabhni/features/onboarding/models/onboarding_model.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -67,9 +66,11 @@ class _OnboardingState extends State<Onboarding> {
               left: R.sW(context, 16),
               right: R.sW(context, 16)),
           child: PageView.builder(
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             onPageChanged: (value) {
-              print(value);
+              if (kDebugMode) {
+                print(value);
+              }
               if (value == (onboardingDetail.length - 1)) {
                 setState(() {
                   isLast = true;
@@ -132,9 +133,9 @@ class _OnboardingState extends State<Onboarding> {
                         text: "تخطي",
                         route: () => context.pushName(Routes.login),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Buttonsmallcyan(
-                        text: "التالي",
+                        text: getLang(context,'next'),
                         route: () {
                           if (isLast == true) {
                             context.pushName(Routes.login);

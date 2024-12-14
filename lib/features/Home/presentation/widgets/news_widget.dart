@@ -19,7 +19,7 @@ class NewsWidget extends StatelessWidget {
           height: R.sH(context, 84),
           width: R.sW(context, 345),
           decoration: BoxDecoration(
-              // image: DecorationImage(image: AssetImage("Assets/images/Frame 916.png"),fit: BoxFit.cover, ,alignment: Alignment.centerRight),
+              // image: DecorationImage(image: AssetImage("assets/images/Frame 916.png"),fit: BoxFit.cover, ,alignment: Alignment.centerRight),
               color: Mycolors.gridcolor,
               borderRadius: BorderRadius.circular(R.sR(context, 8))),
           child: Row(
@@ -30,7 +30,7 @@ class NewsWidget extends StatelessWidget {
                     topRight: Radius.circular(R.sR(context, 10)),
                     bottomRight: Radius.circular(R.sR(context, 10))),
                 child: Image.asset(
-                  "Assets/images/Frame 916.png",
+                  "assets/images/Frame 916.png",
                   fit: BoxFit.cover,
                   width: R.sW(context, 115),
                 ),
@@ -48,7 +48,7 @@ class NewsWidget extends StatelessWidget {
                     children: [
                     Padding(
                       padding:  EdgeInsets.only(right: R.sW(context, 8),left: R.sW(context, 40)),
-                      child: Image.asset("Assets/images/source_logo.png",height: 12,width: 40,),
+                      child: Image.asset("assets/images/source_logo.png",height: 12,width: 40,),
                     ),
                     Text(DateTime.now().toString())
                   ],)

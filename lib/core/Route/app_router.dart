@@ -7,7 +7,7 @@ import 'package:nabhni/features/Auth/presentation/screens/phone_screen.dart';
 import 'package:nabhni/features/Auth/presentation/screens/signup_screen.dart';
 import 'package:nabhni/features/Auth/presentation/screens/signup_second.dart';
 import 'package:nabhni/features/Auth/presentation/screens/verify_view.dart';
-import 'package:nabhni/features/Home/presentation/screens/News_screen.dart';
+import 'package:nabhni/features/Home/presentation/screens/news_screen.dart';
 import 'package:nabhni/features/Home/presentation/screens/advices_screen.dart';
 import 'package:nabhni/features/Home/presentation/screens/callcenter_screen.dart';
 import 'package:nabhni/features/Home/presentation/screens/cart_screen.dart';

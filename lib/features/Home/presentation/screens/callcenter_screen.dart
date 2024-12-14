@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:nabhni/core/custom_methods.dart';
 import 'package:nabhni/core/images.dart';
 import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
 import 'package:nabhni/features/Home/presentation/widgets/support_widget.dart';
 import 'package:nabhni/features/common/widgets/appbar.dart';
 
-class CallcenterScreen extends StatelessWidget {
+class CallcenterScreen extends StatefulWidget {
   const CallcenterScreen({super.key});
 
+  @override
+  State<CallcenterScreen> createState() => _CallcenterScreenState();
+}
+
+class _CallcenterScreenState extends State<CallcenterScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +33,7 @@ class CallcenterScreen extends StatelessWidget {
                     top: R.sH(context, 21), bottom: R.sH(context, 12)),
                 child: Image.asset(Images.support),
               ),
-              Container(
+              SizedBox(
                 width: R.sW(context, 353),
                 child: Column(
                   children: [
@@ -45,7 +51,13 @@ class CallcenterScreen extends StatelessWidget {
                     ),
                     Padding(
                       padding: EdgeInsets.only(top: R.sH(context, 80)),
-                      child: SupportWidget(image:Images.message ,text: 'ابدأ الدردشة الآن للحصول على المساعدة!',),
+                      child: SupportWidget(
+                        onTap: (){
+                            openWhatsapp(whatsNumber: '201066010293');
+                            setState(() {
+                            });
+                        } ,
+                        image:Images.message ,text: 'ابدأ الدردشة الآن للحصول على المساعدة!',),
                     ),
                     SupportWidget(image:Images.email ,text:' راسلنا عبر البريد الإلكتروني للتطبيق',),
                     SupportWidget(image:Images.qustions ,text:' الأسئلة الشائعة (FAQ) و الأكثر تكرارًا .',)
