@@ -55,7 +55,7 @@ class _PhoneNumScreenState extends State<PhoneNumScreen> {
                   alignment: Alignment.topRight,
                   child: Text(
                     "رقم الهاتف",
-                    style: Textutils.fieldlabel,
+                    style: Textutils.fontcolor14bold,
                   )),
             ),
             Row(
@@ -115,7 +115,7 @@ class _PhoneNumScreenState extends State<PhoneNumScreen> {
               ),
               Text(
                 "الاستمرار في تسجيل الدخول",
-                style: Textutils.fieldlabel,
+                style: Textutils.fontcolor14bold,
               )
             ]),
             Padding(

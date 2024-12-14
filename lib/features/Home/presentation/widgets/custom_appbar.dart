@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:nabhni/core/Route/routes.dart';
+import 'package:nabhni/core/extension/routes.dart';
 import 'package:nabhni/core/images.dart';
 import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
+import 'package:nabhni/features/Home/presentation/screens/notification_screen.dart';
 
 class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppbar({super.key});
@@ -40,7 +43,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
         ),
         Spacer(),
         GestureDetector(
-          onTap: (){},
+          onTap: ()=>context.pushName(Routes.cart),
           child: Container(
             height: R.sH(context, 38),
             width: R.sW(context, 38),
@@ -52,13 +55,13 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
               borderRadius: BorderRadius.circular(R.sR(context, 12))
           
             ),
-            child: Image.asset(Images.search),
+            child: Image.asset(Images.whitecart),
           ),
         ),
            Padding(
              padding: const EdgeInsets.only(left: 22.0,right: 8),
              child: GestureDetector(
-               onTap: (){},
+               onTap: ()=>context.pushName(Routes.notification),
                child: Container(
                        height: R.sH(context, 38),
                        width: R.sW(context, 38),

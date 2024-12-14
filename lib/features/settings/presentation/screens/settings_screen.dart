@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:nabhni/core/Route/routes.dart';
+import 'package:nabhni/core/extension/routes.dart';
 import 'package:nabhni/core/images.dart';
 import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
+import 'package:nabhni/features/Auth/presentation/widgets/custom_transbutton.dart';
 import 'package:nabhni/features/Home/presentation/widgets/custom_appbar.dart';
 import 'package:nabhni/features/common/widgets/appbar.dart';
+import 'package:nabhni/features/common/widgets/custom_button.dart';
 import 'package:nabhni/features/settings/presentation/widgets/setting_list.dart';
+import 'package:nabhni/features/settings/presentation/widgets/social_media.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -27,25 +32,51 @@ class SettingsScreen extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(left: R.sW(context, 8)),
-                  child: CircleAvatar(
-                    radius: 24.5,
-                    backgroundColor: Mycolors.primarycolor,
-                    child: CircleAvatar(
-                      radius: 22,
-                      backgroundColor: Colors.white,
-                      child: CircleAvatar(
-                          radius: 20,
-                          backgroundColor: Mycolors.mediumcyan,
-                          child: CircleAvatar(
-                            radius: 18,
-                            child: Text(
-                              'ع',
-                              style: Textutils.title22bold,
-                            ),
-                            backgroundColor: Mycolors.lightcyan,
-                          )),
+                  child: Container(
+                    padding: EdgeInsets.all(R.sP(context, 2)),
+                    height: R.sH(context, 49),
+                    width: R.sW(context, 49),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(R.sR(context, 24.5)),
+                      border: Border.all(
+                        width: R.sW(context, 2),
+                        color: Mycolors.primarycolor
+                      ),
+
+                    ),
+                    child: Container(
+                      height: R.sH(context, 38),
+                      width: R.sW(context, 38),
+                      decoration: BoxDecoration(
+                        color: Mycolors.mediumcyan ,
+                        borderRadius: BorderRadius.circular(R.sR(context, 24.5)),
+                        border: Border.all(
+                          width:  R.sW(context, 1.5),
+                          color: Mycolors.mediumprimary
+                        )
+                      ),
+                      child: Center(child: Text('ع', style: Textutils.title22bold,)),
                     ),
                   ),
+                  // child: CircleAvatar(
+                  //   radius: 24.5,
+                  //   backgroundColor: Mycolors.primarycolor,
+                  //   child: CircleAvatar(
+                  //     radius: 22,
+                  //     backgroundColor: Colors.white,
+                  //     child: CircleAvatar(
+                  //         radius: 20,
+                  //         backgroundColor: Mycolors.mediumcyan,
+                  //         child: CircleAvatar(
+                  //           radius: 18,
+                  //           child: Text(
+                  //             'ع',
+                  //             style: Textutils.title22bold,
+                  //           ),
+                  //           backgroundColor: Mycolors.lightcyan,
+                  //         )),
+                  //   ),
+                  // ),
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,50 +103,47 @@ class SettingsScreen extends StatelessWidget {
               width: R.sW(context, 353),
               child: SettingList(),
             ),
-            Container(
-              margin: EdgeInsets.only(bottom: R.sH(context, 20)),
-              height: R.sH(context, 36),
-              width: double.infinity,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+            GestureDetector(
+              onTap: () => BottomSheet(builder: (BuildContext context) { return Container(height: 200,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(
-                    margin: EdgeInsets.only(left: R.sW(context, 8)),
-                    height: R.sH(context, 46),
-                    width: R.sW(context, 36),
-                    decoration: BoxDecoration(
-                        color: Mycolors.mediumcyan,
-                        borderRadius: BorderRadius.circular(R.sR(context, 8))),
-                    child: Image.asset(Images.logout),
-                  ),
-                  Text(
-                    'تسجيل الخروج',
-                    style: Textutils.bodybold16.copyWith(fontSize: 18),
-                  ),
+                  Text('data'),
+                  Custombutton(text: 'متابعه', route: ()=>context.pushName(Routes.login)),
+                  CustomTransbutton(text: 'الغاء', route: () {  },)
                 ],
               ),
-            ),
-            RichText(
-                text: TextSpan(children: <TextSpan>[
-              TextSpan(text: 'لو عاوز تعرف اكتر؟', style: Textutils.bodybold16),
-              TextSpan(text: ' تابعنا علي', style: Textutils.suptitlebold16)
-            ])),
-            Container(
-              margin: EdgeInsets.only(top: R.sH(context, 8)),
-              width: R.sW(context, 200),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               
-                children: [
-                Image.asset(Images.face),
-                  Image.asset(Images.x), Image.asset(Images.linkedin),Image.asset(Images.insta),
-              ],),
-            )
+              ); }, onClosing: () {  },),
+              child: Container(
+                margin: EdgeInsets.only(bottom: R.sH(context, 20)),
+                height: R.sH(context, 36),
+                width: double.infinity,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(left: R.sW(context, 8)),
+                      height: R.sH(context, 46),
+                      width: R.sW(context, 36),
+                      decoration: BoxDecoration(
+                          color: Mycolors.mediumcyan,
+                          borderRadius: BorderRadius.circular(R.sR(context, 8))),
+                      child: Image.asset(Images.logout),
+                    ),
+                    Text(
+                      'تسجيل الخروج',
+                      style: Textutils.bodybold16.copyWith(fontSize: 18),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SocialMedia()
           ],
         ),
       ),
     );
   }
 }
-
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nabhni/core/extension/routes.dart';
 import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
@@ -7,9 +8,16 @@ import 'package:nabhni/features/common/widgets/appbar.dart';
 import 'package:nabhni/features/common/widgets/custom_button.dart';
 import 'package:pinput/pinput.dart';
 
-class VerifyView extends StatelessWidget {
+class VerifyView extends StatefulWidget {
    VerifyView({super.key});
+
+  @override
+  State<VerifyView> createState() => _VerifyViewState();
+}
+
+class _VerifyViewState extends State<VerifyView> {
   bool completed=false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +40,7 @@ class VerifyView extends StatelessWidget {
                 style: Textutils.logintitle,
               ),
               Text(
-                'يرجى ادخال رمز التحقق المرسل على رقم هاتفك',
+               'لقد أرسلنا رمز OTP إلى رقم هاتفك 201010227401+  برجاءإدخال رمز ال OTP أدناه للتحقق',
                 style: Textutils.suptitlebold16,
               ),
               SizedBox(
@@ -43,7 +51,7 @@ class VerifyView extends StatelessWidget {
                   textDirection: TextDirection.ltr,
                   child: Pinput(
                     onCompleted: (value) {
-                      completed=true;
+                    
                       print(value);
                     },
                     submittedPinTheme: PinTheme(
@@ -81,8 +89,26 @@ class VerifyView extends StatelessWidget {
               SizedBox(
                 height: R.sH(context, R.H(context) / 85),
               ),
-              TimerWidget(onEnd: () {
-                
+              completed==true? Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Row(
+                    children: [
+                      Text('لم تستلم الرمز ؟ '),
+                      TimerWidget(onEnd: () {},),
+                      TextButton(onPressed: (){}, child: Text("إعادة إرسال OTP ")),
+                    
+                    ],
+                  ),
+                    Row(children: [
+                      Text('رقم الهاتف غير صحيح ؟'),
+                      TextButton(onPressed: ()=>context.pop(), child: Text("تغيير رقم الهاتف ")),
+                      ],)
+                ],
+              ):TimerWidget(onEnd: () {
+              setState(() {
+                completed=true;
+              });
               },),
               SizedBox(
                 height: R.sH(context, R.H(context) / 85),

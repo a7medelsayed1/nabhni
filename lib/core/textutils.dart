@@ -29,10 +29,15 @@ class Textutils {
   color: Mycolors.suptitlecolor,
   fontWeight:FontWeight.w700,
   );
-  static TextStyle get fieldlabel => const TextStyle(
+  static TextStyle get fontcolor14bold => const TextStyle(
   fontSize: 14,
   color: Mycolors.titlecolor,
   fontWeight:FontWeight.w700,
+  );
+  static TextStyle get fontcolor14w400 => const TextStyle(
+  fontSize: 14,
+  color: Mycolors.titlecolor,
+  fontWeight:FontWeight.w400,
   );
    static TextStyle get forgotpass => const TextStyle(
   fontSize: 12,

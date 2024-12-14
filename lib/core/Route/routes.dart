@@ -15,6 +15,18 @@ class Routes {
   static const String reports="/reports";
   static const String news="/news";
   static const String callcenter="/callcenter";
+  static const String cart='/cart';
+  static const String notification='/notification';
+  static const String recommended='/recommended';
+  static const String bestseller='/bestseller';
+  static const String personal='/personal';
+  static const String account='/account';
+  static const String favourits='/favourits';
+  static const String address='/address';
+  static const String share='/share';
+  static const String terms='/terms';
+  static const String addressdetails='/addressdetails';
+  static const String addressadded='/addressadded';
 
 
 

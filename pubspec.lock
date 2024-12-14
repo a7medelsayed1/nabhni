@@ -211,6 +211,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.11"
+  flutter_swipe_action_cell:
+    dependency: "direct main"
+    description:
+      name: flutter_swipe_action_cell
+      sha256: f09036bf30fea826d9ee7e86f72f040011f42783e8c629a1a549587b0e057c53
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.5"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -389,6 +397,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.1.2"
+  scroll_date_picker:
+    dependency: "direct main"
+    description:
+      name: scroll_date_picker
+      sha256: "1b00a3e24d92c77aa84d5856cfe6a57fd5df5f645ce1a6af0feb3ec84bdffb34"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.8.0"
   sky_engine:
     dependency: transitive
     description: flutter

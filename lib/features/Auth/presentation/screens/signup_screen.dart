@@ -49,7 +49,7 @@ class SignupScreen extends StatelessWidget {
             Align(
                 alignment: Alignment.topRight,
                 child: Text("الاسم الاول"
-                  ,style: Textutils.fieldlabel,
+                  ,style: Textutils.fontcolor14bold,
                 )),
             CustomTextfield(
               label: "الاسم الاول",
@@ -58,7 +58,7 @@ class SignupScreen extends StatelessWidget {
                 alignment: Alignment.topRight,
                 child: Text(
                   "الاسم الاخير",
-                  style: Textutils.fieldlabel,
+                  style: Textutils.fontcolor14bold,
                 )),
             CustomTextfield(
               label: "الاسم الاخير",

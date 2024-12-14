@@ -15,13 +15,13 @@ class GridViewItem extends StatelessWidget {
     Griditems(icon: Images.gridone, label: "استعلام عن الخدمه"),
     Griditems(icon: Images.gridtwo, label: "شحن الكهرباء"),
     Griditems(icon: Images.gridthree, label: "تقارير الاستهلاك"),
-    Griditems(icon: Images.gridfour, label: "خدمه العملاء"),
+    Griditems(icon: Images.gridfour, label: "متابعة الطلبات"),
     Griditems(icon: Images.gridfive, label: "الاخبار و التحديثات"),
     Griditems(icon: Images.gridsix, label: "ارشادات و توجيهات"),
 
    ];
   
-   List<String>navig=[Routes.inquiry,Routes.recharge,Routes.reports,Routes.callcenter,Routes.news,Routes.advices];
+   List<String>navig=[Routes.callcenter,Routes.recharge,Routes.reports,Routes.callcenter,Routes.news,Routes.advices];
   @override
   Widget build(BuildContext context) {
     return Expanded(

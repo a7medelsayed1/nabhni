@@ -14,7 +14,7 @@ static const String locationIcon ="Assets/images/location.png";
 static const String gridone ="Assets/images/grid1.png";
 static const String gridtwo ="Assets/images/grid2.png";
 static const String gridthree ="Assets/images/grid3.png";
-static const String gridfour ="Assets/images/grid4.png";
+static const String gridfour ="Assets/images/gridfour.png";
 static const String gridfive ="Assets/images/grid5.png";
 static const String gridsix ="Assets/images/grid6.png";
 static const String notification ="Assets/images/notification.png";
@@ -41,6 +41,19 @@ static const String insta ="Assets/images/instagram.png";
 static const String face ="Assets/images/facebook.png";
 static const String x ="Assets/images/twitter.png";
 static const String linkedin ="Assets/images/linkedin.png";
+static const String generator ="Assets/images/generator.png";
+static const String biggenerator ="Assets/images/biggenerator.png";
+static const String freedelivery ="Assets/images/freedelivery.png";
+static const String heart ="Assets/images/heart.png";
+static const String cart ="Assets/images/cart.png";
+static const String horicon ="Assets/images/horicon.png";
+static const String vericon ="Assets/images/vericon.png";
+static const String whitecart ="Assets/images/whitecart.png";
+static const String emptycart ="Assets/animations/emptycart.json.json";
+static const String noticon ="Assets/images/noticon.png";
+static const String cyanheart ="Assets/images/cyanheart.png";
+static const String nolocation ="Assets/images/no-location.png";
+static const String map ="Assets/images/map.png";
 
 
 

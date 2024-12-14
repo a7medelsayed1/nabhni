@@ -56,7 +56,7 @@ class _SignupSecondState extends State<SignupSecond> {
                       alignment: Alignment.topRight,
                       child: Text(
                         "البريد الاليكتروني",
-                        style: Textutils.fieldlabel,
+                        style: Textutils.fontcolor14bold,
                       )),
                 ),
                 CustomTextfield(
@@ -68,7 +68,7 @@ class _SignupSecondState extends State<SignupSecond> {
                       alignment: Alignment.topRight,
                       child: Text(
                         "الرقم السري",
-                        style: Textutils.fieldlabel,
+                        style: Textutils.fontcolor14bold,
                       )),
                 ),
                 CustomTextfield(
@@ -81,7 +81,7 @@ class _SignupSecondState extends State<SignupSecond> {
                       alignment: Alignment.topRight,
                       child: Text(
                         "تاكيد الرقم السري",
-                        style: Textutils.fieldlabel,
+                        style: Textutils.fontcolor14bold,
                       )),
                 ),
                 CustomTextfield(
@@ -101,7 +101,7 @@ class _SignupSecondState extends State<SignupSecond> {
                   ),
                   Text(
                     "الاستمرار في تسجيل الدخول",
-                    style: Textutils.fieldlabel,
+                    style: Textutils.fontcolor14bold,
                   )]),
                   Padding(
                     padding:  EdgeInsets.only(top: R.sH(context,30.0)),

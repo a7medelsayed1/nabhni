@@ -13,7 +13,7 @@ class AdvicesScreen extends StatelessWidget {
     AdvicesCard(image: Images.card1, title: 'أبرز الأسئلة الشائعة والإجابات حول التعامل الآمن مع الكهرباء!',  buttontitle: 'استكشف', cardcolor: Mycolors.card1),
     AdvicesCard(image: Images.card2, title: '19 نصيحة تحافظ بيها على سلامتك أثناء التعامل مع الكهرباء!',  buttontitle: 'المزيد', cardcolor: Mycolors.card2),
     AdvicesCard(image: Images.card3, title: 'كيف تتعامل مع الكهرباء بأمان في حالات الطوارئ؟',  buttontitle: 'المزيد', cardcolor: Mycolors.card3),
-    AdvicesCard(image: Images.card4, title: 'إجراءات بسيطة لتجنب تلف الأجهزة الكهربائية!', buttontitle: 'المزيد', cardcolor: Mycolors.card4),
+    AdvicesCard(image: Images.card4, title: 'إجراءات بسيطة لتجنب تلف الأجهزة الكهربائية!', buttontitle: 'المزيد', cardcolor: Mycolors.lightgrey),
 
   ];
   @override

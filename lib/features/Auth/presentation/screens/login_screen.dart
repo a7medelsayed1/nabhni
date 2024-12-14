@@ -60,7 +60,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 alignment: Alignment.topRight,
                 child: Text(
                   "البريد الاليكتروني",
-                  style: Textutils.fieldlabel,
+                  style: Textutils.fontcolor14bold,
                 )),
             CustomTextfield(
               label: "hello@example.com",
@@ -71,7 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   alignment: Alignment.topRight,
                   child: Text(
                     "الرقم السري",
-                    style: Textutils.fieldlabel,
+                    style: Textutils.fontcolor14bold,
                   )),
             ),
             CustomTextfield(
@@ -91,11 +91,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 Text(
                   "الاستمرار في تسجيل الدخول",
-                  style: Textutils.fieldlabel,
+                  style: Textutils.fontcolor14bold,
                 ),
                 const Spacer(),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () =>context.pushName(Routes.phone),
                     child: Text(
                       "هل نسيت كلمه السر؟",
                       style: Textutils.forgotpass,
