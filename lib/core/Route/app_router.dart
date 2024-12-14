@@ -13,7 +13,9 @@ import 'package:nabhni/features/Home/presentation/screens/callcenter_screen.dart
 import 'package:nabhni/features/Home/presentation/screens/cart_screen.dart';
 import 'package:nabhni/features/Home/presentation/screens/home_screen.dart';
 import 'package:nabhni/features/Home/presentation/screens/inquiry_screen.dart';
+import 'package:nabhni/features/Home/presentation/screens/news_details.dart';
 import 'package:nabhni/features/Home/presentation/screens/notification_screen.dart';
+import 'package:nabhni/features/Home/presentation/screens/orders_follow.dart';
 import 'package:nabhni/features/Home/presentation/screens/recharge_screen.dart';
 import 'package:nabhni/features/Home/presentation/screens/reports_screen.dart';
 import 'package:nabhni/features/onboarding/presentation/Screens/splash_screen.dart';
@@ -60,6 +62,8 @@ static Route<dynamic> onGeneratRoute(RouteSettings settings){
     case Routes.terms: return MaterialPageRoute(builder: (context)=>  TermsScreen());
     case Routes.addressdetails: return MaterialPageRoute(builder: (context)=>  AddressDetails());
     case Routes.addressadded: return MaterialPageRoute(builder: (context)=>  AddressAdded());
+    case Routes.ordersfollow: return MaterialPageRoute(builder: (context)=>  OrdersFollow());
+    case Routes.newsdetails: return MaterialPageRoute(builder: (context)=>  NewsDetails());
 
     default: return undifinedroute();
     

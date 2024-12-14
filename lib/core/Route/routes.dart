@@ -27,6 +27,8 @@ class Routes {
   static const String terms='/terms';
   static const String addressdetails='/addressdetails';
   static const String addressadded='/addressadded';
+  static const String ordersfollow='/orderfollow';
+  static const String newsdetails='/newsdetails';
 
 
 
