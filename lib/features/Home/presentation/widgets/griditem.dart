@@ -21,7 +21,7 @@ class GridViewItem extends StatelessWidget {
 
    ];
   
-   List<String>navig=[Routes.callcenter,Routes.recharge,Routes.reports,Routes.callcenter,Routes.news,Routes.advices];
+   List<String>navig=[Routes.callcenter,Routes.recharge,Routes.reports,Routes.ordersfollow,Routes.news,Routes.advices];
   @override
   Widget build(BuildContext context) {
     return Expanded(

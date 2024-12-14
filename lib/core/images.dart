@@ -54,6 +54,11 @@ static const String noticon ="Assets/images/noticon.png";
 static const String cyanheart ="Assets/images/cyanheart.png";
 static const String nolocation ="Assets/images/no-location.png";
 static const String map ="Assets/images/map.png";
+static const String orders ="Assets/images/orders.png";
+static const String clock ="Assets/images/clock.png";
+static const String odetails ="Assets/images/orderdetails.png";
+static const String newsdetails ="Assets/images/newsdetsils.png";
+static const String source ="Assets/images/sourcelogo.png";
 
 
 
