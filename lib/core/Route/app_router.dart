@@ -7,6 +7,7 @@ import 'package:nabhni/features/Auth/presentation/screens/phone_screen.dart';
 import 'package:nabhni/features/Auth/presentation/screens/signup_screen.dart';
 import 'package:nabhni/features/Auth/presentation/screens/signup_second.dart';
 import 'package:nabhni/features/Auth/presentation/screens/verify_view.dart';
+import 'package:nabhni/features/Home/presentation/screens/faqustion.dart';
 import 'package:nabhni/features/Home/presentation/screens/news_screen.dart';
 import 'package:nabhni/features/Home/presentation/screens/advices_screen.dart';
 import 'package:nabhni/features/Home/presentation/screens/callcenter_screen.dart';
@@ -64,6 +65,7 @@ static Route<dynamic> onGeneratRoute(RouteSettings settings){
     case Routes.addressadded: return MaterialPageRoute(builder: (context)=>  AddressAdded());
     case Routes.ordersfollow: return MaterialPageRoute(builder: (context)=>  OrdersFollow());
     case Routes.newsdetails: return MaterialPageRoute(builder: (context)=>  NewsDetails());
+    case Routes.faqustion: return MaterialPageRoute(builder: (context)=>  Faqustion());
 
     default: return undifinedroute();
     

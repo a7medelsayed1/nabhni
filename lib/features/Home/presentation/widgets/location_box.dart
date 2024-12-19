@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nabhni/core/Route/routes.dart';
+import 'package:nabhni/core/extension/routes.dart';
 import 'package:nabhni/core/images.dart';
 import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
@@ -61,7 +63,7 @@ class LocationBox extends StatelessWidget {
                           child: const Align(
                               alignment: Alignment.centerRight,
                               child: Text(
-                                "المنصوره قسم اول-كليه الاداب",
+                                "المنصوره غرب-شارع جيهان",
                                 textAlign: TextAlign.start,
                               )),
                         )
@@ -69,7 +71,7 @@ class LocationBox extends StatelessWidget {
                     ),
                   ),
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () =>context.pushName(Routes.addressadded),
                       child: Text(
                         "تغيير",
                         style: Textutils.cyan14,

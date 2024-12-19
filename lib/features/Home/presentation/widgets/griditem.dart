@@ -59,7 +59,7 @@ class GridViewItem extends StatelessWidget {
                    ),
                    Padding(
                      padding: const EdgeInsets.all(8.0),
-                     child: Text(griditems[index].label),
+                     child: Text(griditems[index].label,maxLines: 1,),
                    )
                  ],
                ),

@@ -60,101 +60,103 @@ class _OnboardingState extends State<Onboarding> {
                 ))
           ],
         ),
-        body: Padding(
-          padding: EdgeInsets.only(
-              top: R.sH(context, 20),
-              left: R.sW(context, 16),
-              right: R.sW(context, 16)),
-          child: PageView.builder(
-            physics: const BouncingScrollPhysics(),
-            onPageChanged: (value) {
-              if (kDebugMode) {
-                print(value);
-              }
-              if (value == (onboardingDetail.length - 1)) {
-                setState(() {
-                  isLast = true;
-                });
-              } else {
-                setState(() {
-                  isLast = false;
-                });
-              }
-            },
-            controller: boardcontroller,
-            itemBuilder: (context, index) => Center(
-              child: Column(
-                children: [
-                  Padding(
-                    padding: EdgeInsets.only(bottom: R.sH(context, 20)),
-                    child: SvgPicture.asset(onboardingDetail[index].image),
-                  ),
-                  // RichText(text: TextSpan(
-                  //   style: Textutils.logintitle,
-                  //   children:<TextSpan>[
-                  //     TextSpan(text: "نبهني",style: TextStyle(color: Mycolors.mybuttoncolor)),
-                      
-
-                  //   ] 
-                  // ))
-                  Text(
-                    onboardingDetail[index].title,
-                    style: Textutils.logintitle,
-                  )
-                  ,Padding(
-                    padding:
-                        EdgeInsets.symmetric(horizontal: R.sW(context, 16)),
-                    child: Text(
-                      textAlign:TextAlign.center ,
-                      onboardingDetail[index].body,
-                      style: Textutils.suptitlebold16,
+        body: SafeArea(
+          child: Padding(
+            padding: EdgeInsets.only(
+                top: R.sH(context, 20),
+                left: R.sW(context, 16),
+                right: R.sW(context, 16)),
+            child: PageView.builder(
+              physics: const BouncingScrollPhysics(),
+              onPageChanged: (value) {
+                if (kDebugMode) {
+                  print(value);
+                }
+                if (value == (onboardingDetail.length - 1)) {
+                  setState(() {
+                    isLast = true;
+                  });
+                } else {
+                  setState(() {
+                    isLast = false;
+                  });
+                }
+              },
+              controller: boardcontroller,
+              itemBuilder: (context, index) => Center(
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(bottom: R.sH(context, 20)),
+                      child: SvgPicture.asset(onboardingDetail[index].image),
                     ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(top: R.sH(context, 24)),
-                    child: SmoothPageIndicator(
-                      controller: boardcontroller,
-                      effect: const ExpandingDotsEffect(
-                        dotColor: Colors.black,
-                        activeDotColor: Color(0xffF5821F),
-                        dotHeight: 6,
-                        expansionFactor: 4,
-                        dotWidth: 6,
-                        spacing: 5.0,
+                    // RichText(text: TextSpan(
+                    //   style: Textutils.logintitle,
+                    //   children:<TextSpan>[
+                    //     TextSpan(text: "نبهني",style: TextStyle(color: Mycolors.mybuttoncolor)),
+                        
+          
+                    //   ] 
+                    // ))
+                    Text(
+                      onboardingDetail[index].title,
+                      style: Textutils.logintitle,
+                    )
+                    ,Padding(
+                      padding:
+                          EdgeInsets.symmetric(horizontal: R.sW(context, 16)),
+                      child: Text(
+                        textAlign:TextAlign.center ,
+                        onboardingDetail[index].body,
+                        style: Textutils.suptitlebold16,
                       ),
-                      count: onboardingDetail.length,
                     ),
-                  ),
-                  SizedBox(height: R.sH(context, 104)),
-                  // Spacer(),
-                  Row(
-                    children: [
-                      Buttonwidget(
-                        text: "تخطي",
-                        route: () => context.pushName(Routes.login),
+                    Padding(
+                      padding: EdgeInsets.only(top: R.sH(context, 24)),
+                      child: SmoothPageIndicator(
+                        controller: boardcontroller,
+                        effect: const ExpandingDotsEffect(
+                          dotColor: Colors.black,
+                          activeDotColor: Color(0xffF5821F),
+                          dotHeight: 6,
+                          expansionFactor: 4,
+                          dotWidth: 6,
+                          spacing: 5.0,
+                        ),
+                        count: onboardingDetail.length,
                       ),
-                      const Spacer(),
-                      Buttonsmallcyan(
-                        text: getLang(context,'next'),
-                        route: () {
-                          if (isLast == true) {
-                            context.pushName(Routes.login);
-                          } else {
-                            boardcontroller.nextPage(
-                              duration: const Duration(
-                                milliseconds: 750,
-                              ),
-                              curve: Curves.fastLinearToSlowEaseIn,
-                            );
-                          }
-                        },
-                      ),
-                    ],
-                  )
-                ],
+                    ),
+                    SizedBox(height: R.sH(context, 104)),
+                    // Spacer(),
+                    Row(
+                      children: [
+                        Buttonwidget(
+                          text: "تخطي",
+                          route: () => context.pushName(Routes.login),
+                        ),
+                        const Spacer(),
+                        Buttonsmallcyan(
+                          text: getLang(context,'next'),
+                          route: () {
+                            if (isLast == true) {
+                              context.pushName(Routes.login);
+                            } else {
+                              boardcontroller.nextPage(
+                                duration: const Duration(
+                                  milliseconds: 750,
+                                ),
+                                curve: Curves.fastLinearToSlowEaseIn,
+                              );
+                            }
+                          },
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               ),
+              itemCount: onboardingDetail.length,
             ),
-            itemCount: onboardingDetail.length,
           ),
         ));
   }

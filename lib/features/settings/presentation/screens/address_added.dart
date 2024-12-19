@@ -46,11 +46,11 @@ class AddressAdded extends StatelessWidget {
                       Row(
                         children: [
                           Image.asset(Images.locationIcon,color: Mycolors.primarycolor,height: R.sH(context, 20),width: R.sW(context, 20),),
-                          Text('قرية المعصرة / أبو جوهري',style: Textutils.cyan14.copyWith(fontSize: R.F(context, 16),),)
+                          Text('شارع جيهان / غرب المنصوره',style: Textutils.cyan14.copyWith(fontSize: R.F(context, 16),),)
                       
                         ],
                       ),
-                      Text('مركز بلقاس - محافظة الدقهلية',style: Textutils.fontcolor14bold,)
+                      Text('مدينه المنصوره - محافظة الدقهلية',style: Textutils.fontcolor14bold,)
                     ],
                   ),
                   IconButton(onPressed: (){}, icon:const Icon(FontAwesomeIcons.trash,color: Colors.red,size: 22,))
@@ -58,7 +58,7 @@ class AddressAdded extends StatelessWidget {
               ) ,
             )),
         ),
-        Custombutton(text: 'اضف عنوان', route:(){} )
+        Custombutton(text: 'اضف عنوان', route:()=>context.pushName(Routes.addressdetails) )
       ],
     ),
     ),

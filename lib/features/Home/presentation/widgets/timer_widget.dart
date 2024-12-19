@@ -1,5 +1,6 @@
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:flutter/material.dart';
+import 'package:nabhni/core/images.dart';
 import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
@@ -52,15 +53,21 @@ class TimerWidget extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
-                height: 65,
-                width: 186,
-                child: Text(
-                  'باقي على انقطاع الكهرباء 8 ساعات و 6 دقائق، حيث من المتوقع أن يتم انقطاع الخدمة تمام الساعة 10:00 صباحًا. يرجى الاستعداد قبل انقطاع التيار.',
-                  softWrap: true,
-                  overflow: TextOverflow.visible,
-                  style: Textutils.timer12,
-                ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Image.asset(Images.notification,color: Mycolors.yellow,),
+                  SizedBox(
+                    height: 65,
+                    width: 195,
+                    child: Text(
+                      'باقي على انقطاع الكهرباء  5 دقائق، حيث من المتوقع أن يتم انقطاع الخدمة في تمام الساعة 10:00 صباحًا. يرجى الاستعداد قبل انقطاع التيار.',
+                      softWrap: true,
+                      overflow: TextOverflow.visible,
+                      style: Textutils.fontcolor14bold,
+                    ),
+                  ),
+                ],
               )
             ],
           ),
@@ -72,22 +79,29 @@ class TimerWidget extends StatelessWidget {
   }
 }
 
-class CircleTimerWidget extends StatelessWidget {
+class CircleTimerWidget extends StatefulWidget {
   const CircleTimerWidget({
     super.key,
   });
 
   @override
+  State<CircleTimerWidget> createState() => _CircleTimerWidgetState();
+}
+
+class _CircleTimerWidgetState extends State<CircleTimerWidget> {
+   final CountDownController _controller =CountDownController();
+
+  @override
   Widget build(BuildContext context) {
     return CircularCountDownTimer(
-      duration: Duration.hoursPerDay,
+      duration: 60*5,
       initialDuration: 0,
-      controller: CountDownController(),
+      controller: _controller,
       width: R.sW(context, 115),
       height: R.sW(context, 119),
-      ringColor: Colors.grey[300]!,
+      ringColor: Colors.transparent,
       ringGradient: null,
-      fillColor: Colors.transparent,
+      fillColor: Colors.white,
       fillGradient: null,
       backgroundColor: Colors.transparent,
       backgroundGradient: null,
@@ -96,11 +110,11 @@ class CircleTimerWidget extends StatelessWidget {
       textStyle: const TextStyle(
           fontSize: 33.0, color: Colors.white, fontWeight: FontWeight.bold),
       textAlign: TextAlign.center,
-      textFormat: CountdownTextFormat.S,
-      isReverse: false,
-      isReverseAnimation: false,
+      textFormat: CountdownTextFormat.MM_SS,
+      isReverse: true,
+      isReverseAnimation: true,
       isTimerTextShown: true,
-      autoStart: false,
+      autoStart: true,
       onStart: () {
         debugPrint('Countdown Started');
       },
@@ -108,13 +122,16 @@ class CircleTimerWidget extends StatelessWidget {
         debugPrint('Countdown Ended');
       },
       onChange: (String timeStamp) {
+      
         debugPrint('Countdown Changed $timeStamp');
       },
       timeFormatterFunction: (defaultFormatterFunction, duration) {
         if (duration.inSeconds == 0) {
-          return "06 : 8";
-        } else {
-          return Function.apply(defaultFormatterFunction, [duration]);
+          return "الخدمه معطله";
+        }
+        
+         else {
+          return '10:00 صباحا';
         }
       },
     );

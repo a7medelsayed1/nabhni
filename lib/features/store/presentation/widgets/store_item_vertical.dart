@@ -19,6 +19,7 @@ List<bool>favouritstate=List.generate(6, (index)=>true);
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+        physics:const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         scrollDirection: Axis.vertical,
         itemCount: 6,

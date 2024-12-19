@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:nabhni/core/Route/routes.dart';
+import 'package:nabhni/core/extension/routes.dart';
 import 'package:nabhni/core/images.dart';
 import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
@@ -48,7 +50,7 @@ class AdvicesScreen extends StatelessWidget {
 حولك من المخاطر الكهربائية."''',style: Textutils.hello14.copyWith(color: Colors.black),),
                 ),
                 Spacer(),
-                Align(alignment: Alignment.bottomRight, child: CardButton(buttontext: cards[index].buttontitle)),
+                Align(alignment: Alignment.bottomRight, child: CardButton(buttontext: cards[index].buttontitle, onTap: () => context.pushName(Routes.faqustion),)),
               
               ],),
               // SvgPicture.asset(Images.card1,height: 85,width: 85,)

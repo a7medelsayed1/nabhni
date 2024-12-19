@@ -93,7 +93,7 @@ class _BestsellerScreenState extends State<BestsellerScreen> {
             itemCount: 10,
             itemBuilder: (context,index)=> StoreItemHorizontal(),
             
-            )):Expanded(child: StoreItemVertical())
+            )):Expanded(child: SingleChildScrollView(child: StoreItemVertical()))
           ],
         ),
       ),

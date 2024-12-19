@@ -59,6 +59,7 @@ class Images {
   static const String odetails ="assets/images/orderdetails.png";
   static const String newsdetails ="assets/images/newsdetsils.png";
   static const String source ="assets/images/sourcelogo.png";
+  static const String arrows ="assets/images/arrows.png";
 
 
 

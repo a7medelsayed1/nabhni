@@ -29,6 +29,7 @@ class Routes {
   static const String addressadded='/addressadded';
   static const String ordersfollow='/orderfollow';
   static const String newsdetails='/newsdetails';
+  static const String faqustion='/faqustion';
 
 
 

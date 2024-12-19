@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:nabhni/core/Route/routes.dart';
 import 'package:nabhni/core/custom_methods.dart';
+import 'package:nabhni/core/extension/routes.dart';
 import 'package:nabhni/core/images.dart';
 import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
@@ -53,14 +55,21 @@ class _CallcenterScreenState extends State<CallcenterScreen> {
                       padding: EdgeInsets.only(top: R.sH(context, 80)),
                       child: SupportWidget(
                         onTap: (){
-                            openWhatsapp(whatsNumber: '201066010293');
+                            openWhatsapp(whatsNumber: '201000948891');
                             setState(() {
                             });
                         } ,
                         image:Images.message ,text: 'ابدأ الدردشة الآن للحصول على المساعدة!',),
                     ),
-                    SupportWidget(image:Images.email ,text:' راسلنا عبر البريد الإلكتروني للتطبيق',),
-                    SupportWidget(image:Images.qustions ,text:' الأسئلة الشائعة (FAQ) و الأكثر تكرارًا .',)
+                    SupportWidget(
+                      onTap: (){
+                        sendingMails();
+                        setState(() {
+                          
+                        });
+                      },
+                      image:Images.email ,text:' راسلنا عبر البريد الإلكتروني للتطبيق',),
+                    SupportWidget(image:Images.qustions ,text:' الأسئلة الشائعة (FAQ) و الأكثر تكرارًا .',onTap: ()=>context.pushName(Routes.faqustion),)
 
                   ],
                 ),

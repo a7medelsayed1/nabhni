@@ -13,11 +13,10 @@ class NewsSlider extends StatelessWidget {
       
       items: [
         Container(
-          padding: EdgeInsets.all(R.sW(context, 8)),
           height: R.sH(context, 170),
           width: R.sW(context, 305),
           margin: EdgeInsets.only(
-              top: R.sH(context, 26), bottom: R.sW(context, 1)),
+              top: R.sH(context, 16), bottom: R.sW(context, 1)),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(R.sR(context, 16)),
               image: DecorationImage(
@@ -25,11 +24,10 @@ class NewsSlider extends StatelessWidget {
           // child: Image.asset("Assets/images/Frame 910.png",fit:BoxFit.cover ,),
         ),
         Container(
-          padding: EdgeInsets.all(R.sW(context, 8)),
           height: R.sH(context, 170),
           width: R.sW(context, 305),
           margin: EdgeInsets.only(
-              top: R.sH(context, 26), bottom: R.sW(context, 1)),
+              top: R.sH(context, 16), bottom: R.sW(context, 1)),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(R.sR(context, 8)),
               image: DecorationImage(
@@ -40,7 +38,7 @@ class NewsSlider extends StatelessWidget {
       options: CarouselOptions(
         height: R.sH(
           context,
-          200,
+          170,
         ),
         autoPlay: true,
         enlargeCenterPage: false,
