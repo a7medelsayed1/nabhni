@@ -15,7 +15,7 @@ class LocationBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-          top: R.sH(context, 12),
+          top: R.sH(context, 16),
           left: R.sW(context, 16),
           right: R.sW(context, 16)),
       child: Column(

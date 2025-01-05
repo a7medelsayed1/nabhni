@@ -22,10 +22,10 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
       )
       ,
       child: Padding(
-        padding: const EdgeInsets.only(top: 8.0),
-        child: Row(children: [Padding(
-          padding: const EdgeInsets.only(right: 18.0,left: 8),
-          child: CircleAvatar(),
+        padding:  EdgeInsets.only(top: R.sH(context, 8)),
+        child: Row(children: [ Padding(
+          padding:  EdgeInsets.only(right: R.sW(context, 18),left: R.sW(context, 8)),
+          child:const CircleAvatar(backgroundImage:AssetImage(Images.me,),),
         ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,

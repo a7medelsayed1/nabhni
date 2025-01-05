@@ -38,32 +38,29 @@ class _NotificationScreenState extends State<NotificationScreen> {
       appBar:const MainAppBar(leadingWidget: BackButton(),
       title: 'الإشعارات',
       ),
-      body:Expanded(child: ListView.builder(
+      body:ListView.builder(
         itemCount: notilist.length,
         itemBuilder: (context,index)=>SwipeActionCell(
            key: ObjectKey(notilist[index]),
-     trailingActions: <SwipeAction>[
+           trailingActions: <SwipeAction>[
        SwipeAction(
            performsFirstActionWithFullSwipe: true,
-           icon: Icon(FontAwesomeIcons.trash,color: Colors.red,),
+           icon:const Icon(FontAwesomeIcons.trash,color: Colors.red,),
           
            onTap: (CompletionHandler handler) async {
-             
-             /// await handler(true) : will delete this row
-             /// And after delete animation,setState will called to 
-             /// sync your data source with your UI
-
+            
+      
              await handler(true);
             notilist.removeAt(index);
              setState(() {});
            },
            color: Colors.transparent),
-     ],
+           ],
           child: Container(
             padding: EdgeInsets.all(R.sP(context, 8)),
             height: R.sH(context,85),
             width: R.sW(context, 355),
-            margin: EdgeInsets.symmetric(horizontal: R.sW(context, 8),vertical: R.sH(context, 8)),
+            margin: EdgeInsets.symmetric(horizontal: R.sW(context, 12),vertical: R.sH(context, 4)),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(R.sR(context, 8)),
               color: Mycolors.gridcolor,
@@ -105,7 +102,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
           
             ],),
             ),
-        ))) ,
+        )) ,
     );
   }
 }

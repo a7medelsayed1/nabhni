@@ -77,4 +77,13 @@ class Textutils {
   fontSize: 12,
   color: Mycolors.titlecolor,
   fontWeight:FontWeight.w700,);
+
+   static TextStyle get cyan32bold => const TextStyle(
+  fontSize: 32,
+  color: Mycolors.primarycolor,
+  fontWeight:FontWeight.w700,);
+    static TextStyle get title18bold => const TextStyle(
+  fontSize: 18,
+  color: Mycolors.titlecolor,
+  fontWeight:FontWeight.w700,);
 }

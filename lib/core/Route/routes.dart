@@ -30,6 +30,10 @@ class Routes {
   static const String ordersfollow='/orderfollow';
   static const String newsdetails='/newsdetails';
   static const String faqustion='/faqustion';
+  static const String productdetails='/productdetails';
+  static const String checkout='/checkout';
+  static const String placeorder='/placeorder';
+  static const String placedorder='/placedorder';
 
 
 

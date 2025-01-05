@@ -30,6 +30,10 @@ import 'package:nabhni/features/settings/presentation/screens/peronalinformation
 import 'package:nabhni/features/settings/presentation/screens/share_screen.dart';
 import 'package:nabhni/features/settings/presentation/screens/terms_screen.dart';
 import 'package:nabhni/features/store/presentation/screens/bestseller_screen.dart';
+import 'package:nabhni/features/store/presentation/screens/checkout_screen.dart';
+import 'package:nabhni/features/store/presentation/screens/order_placed_successfully.dart';
+import 'package:nabhni/features/store/presentation/screens/placeorder_screen.dart';
+import 'package:nabhni/features/store/presentation/screens/product_details.dart';
 import 'package:nabhni/features/store/presentation/screens/recommented_screen.dart';
 
 class AppRouter {
@@ -66,6 +70,10 @@ static Route<dynamic> onGeneratRoute(RouteSettings settings){
     case Routes.ordersfollow: return MaterialPageRoute(builder: (context)=>  OrdersFollow());
     case Routes.newsdetails: return MaterialPageRoute(builder: (context)=>  NewsDetails());
     case Routes.faqustion: return MaterialPageRoute(builder: (context)=>  Faqustion());
+    case Routes.productdetails: return MaterialPageRoute(builder: (context)=>  ProductDetails());
+    case Routes.checkout: return MaterialPageRoute(builder: (context)=>  CheckoutScreen());
+    case Routes.placeorder: return MaterialPageRoute(builder: (context)=>  PlaceorderScreen());
+    case Routes.placedorder: return MaterialPageRoute(builder: (context)=>  OrderPlacedSuccessfully());
 
     default: return undifinedroute();
     

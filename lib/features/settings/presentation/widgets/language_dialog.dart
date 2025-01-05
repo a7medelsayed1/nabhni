@@ -49,7 +49,7 @@ class GenderDialogState extends State<LanguageDialog> {
             ),
             ListTile(
                 title: Text(
-                  "Arabic",
+                  "العربيه",
                   style: Textutils.title22bold,
                 ),
                 leading: Radio<String>(

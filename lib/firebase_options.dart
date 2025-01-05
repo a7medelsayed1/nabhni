@@ -41,49 +41,48 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBQlWa2pW4fcM8YapBScVTIClPSlpizmrA',
-    appId: '1:306875245988:web:3e5152a9081006d1c2cd31',
-    messagingSenderId: '306875245988',
-    projectId: 'nabahni-84826',
-    authDomain: 'nabahni-84826.firebaseapp.com',
-    storageBucket: 'nabahni-84826.firebasestorage.app',
-    measurementId: 'G-05E5DMGFPT',
+    apiKey: 'AIzaSyAPv6whMxkgX5uU5DwLMHLpZkeGAlyjVlk',
+    appId: '1:674632122345:web:a1d04398e22e75abae1578',
+    messagingSenderId: '674632122345',
+    projectId: 'nabhni-db655',
+    authDomain: 'nabhni-db655.firebaseapp.com',
+    storageBucket: 'nabhni-db655.firebasestorage.app',
+    measurementId: 'G-SEBZGQK69J',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD7y7hOGKb03mJqmI6HeIjCi49_MX9XLd0',
-    appId: '1:306875245988:android:e2ae712f6ac32a1dc2cd31',
-    messagingSenderId: '306875245988',
-    projectId: 'nabahni-84826',
-    storageBucket: 'nabahni-84826.firebasestorage.app',
+    apiKey: 'AIzaSyDjOfMt6KI0m_4DNaSmJRO6VpblsM_n1cI',
+    appId: '1:674632122345:android:01fdceea40fcf9cbae1578',
+    messagingSenderId: '674632122345',
+    projectId: 'nabhni-db655',
+    storageBucket: 'nabhni-db655.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAdXfAZJnUgIgKhD5eYt0r1tdawIP9tA9s',
-    appId: '1:306875245988:ios:b8a9e681ccec3a75c2cd31',
-    messagingSenderId: '306875245988',
-    projectId: 'nabahni-84826',
-    storageBucket: 'nabahni-84826.firebasestorage.app',
+    apiKey: 'AIzaSyDfqUfdHFvI11vn86RxyG_SDvqLN2f-4Gc',
+    appId: '1:674632122345:ios:c206c9c52390447fae1578',
+    messagingSenderId: '674632122345',
+    projectId: 'nabhni-db655',
+    storageBucket: 'nabhni-db655.firebasestorage.app',
     iosBundleId: 'com.example.nabhni',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAdXfAZJnUgIgKhD5eYt0r1tdawIP9tA9s',
-    appId: '1:306875245988:ios:b8a9e681ccec3a75c2cd31',
-    messagingSenderId: '306875245988',
-    projectId: 'nabahni-84826',
-    storageBucket: 'nabahni-84826.firebasestorage.app',
+    apiKey: 'AIzaSyDfqUfdHFvI11vn86RxyG_SDvqLN2f-4Gc',
+    appId: '1:674632122345:ios:c206c9c52390447fae1578',
+    messagingSenderId: '674632122345',
+    projectId: 'nabhni-db655',
+    storageBucket: 'nabhni-db655.firebasestorage.app',
     iosBundleId: 'com.example.nabhni',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBQlWa2pW4fcM8YapBScVTIClPSlpizmrA',
-    appId: '1:306875245988:web:08244ed6c8fb8c73c2cd31',
-    messagingSenderId: '306875245988',
-    projectId: 'nabahni-84826',
-    authDomain: 'nabahni-84826.firebaseapp.com',
-    storageBucket: 'nabahni-84826.firebasestorage.app',
-    measurementId: 'G-DQ3Q0YGEJK',
+    apiKey: 'AIzaSyAPv6whMxkgX5uU5DwLMHLpZkeGAlyjVlk',
+    appId: '1:674632122345:web:55c6a6c7010e1596ae1578',
+    messagingSenderId: '674632122345',
+    projectId: 'nabhni-db655',
+    authDomain: 'nabhni-db655.firebaseapp.com',
+    storageBucket: 'nabhni-db655.firebasestorage.app',
+    measurementId: 'G-8MWW9RYRTK',
   );
-
 }

@@ -60,7 +60,13 @@ class Images {
   static const String newsdetails ="assets/images/newsdetsils.png";
   static const String source ="assets/images/sourcelogo.png";
   static const String arrows ="assets/images/arrows.png";
-
+  static const String generator4x ="assets/images/generator4x.png";
+  static const String share ="assets/images/share.png";
+  static const String person ="assets/images/person.png";
+  static const String cash ="assets/images/cash.png";
+  static const String card ="assets/images/card.png";
+  static const String delivery ="assets/images/Delivery.svg";
+  static const String me ="assets/images/me.jpg";
 
 
 

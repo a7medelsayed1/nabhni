@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
+import 'package:nabhni/core/Route/routes.dart';
+import 'package:nabhni/core/extension/routes.dart';
 import 'package:nabhni/core/images.dart';
 import 'package:nabhni/core/mycolors.dart';
 import 'package:nabhni/core/responsivity.dart';
@@ -241,6 +243,7 @@ class _CartScreenState extends State<CartScreen> {
                 Custombutton(
                     text: 'اتمام عمليه الشراء',
                     route: () {
+                      context.pushName(Routes.productdetails);
                       setState(() {
                         counter = 1;
                       });
