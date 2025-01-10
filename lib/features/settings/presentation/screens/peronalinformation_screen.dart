@@ -12,9 +12,9 @@ import 'package:nabhni/features/settings/presentation/widgets/phone_dialog.dart'
 class PeronalinformationScreen extends StatelessWidget {
   PeronalinformationScreen({super.key});
   List<PersonalModel> personal = [
-    PersonalModel(title: 'الاسم', subtitle: 'علاء توفيق إبراهيم'),
+    PersonalModel(title: 'الاسم', subtitle: 'أحمد السيد السعيد '),
     PersonalModel(
-        title: 'البريد الإلكتروني', subtitle: 'alaatawfik_4566@gmail.com'),
+        title: 'البريد الإلكتروني', subtitle: 'ahmedelsayed@gmail.com'),
     PersonalModel(title: 'رقم الهاتف', subtitle: 'رقم الهاتف'),
     PersonalModel(title: 'النوع', subtitle: 'النوع'),
     PersonalModel(title: 'تاريخ الميلاد', subtitle: 'تاريخ الميلاد'),

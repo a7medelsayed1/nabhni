@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nabhni/core/Route/routes.dart';
+import 'package:nabhni/core/extension/routes.dart';
 import 'package:nabhni/core/responsivity.dart';
 
 class StoreAppbar extends StatelessWidget {
@@ -15,7 +17,7 @@ class StoreAppbar extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
         
-        BackButton(),
+        BackButton(onPressed: () => context.pushName(Routes.home),),
         Spacer(),
         SizedBox(
           height: R.sH(context,52),

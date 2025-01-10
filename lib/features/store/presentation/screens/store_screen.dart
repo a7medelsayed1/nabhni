@@ -82,7 +82,7 @@ class StoreScreen extends StatelessWidget {
           ),
           Positioned(
                   bottom: MediaQuery.of(context).size.width/25,
-                  left: MediaQuery.of(context).size.width/3.5,
+                  left:( MediaQuery.of(context).size.width/2)-90,
                   child: 
                 GestureDetector(
                   onTap: () => context.pushName(Routes.cart),
@@ -90,15 +90,15 @@ class StoreScreen extends StatelessWidget {
                     height: R.sH(context, 40),
                     width: R.sW(context, 180),
                     decoration: BoxDecoration(
-                      color: Mycolors.buttongrey,
+                      color:Colors.orange,
                       borderRadius: BorderRadius.circular(R.sR(context, 24))
                     ),
                     child: Row(
                       
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset(Images.cart,height: R.sH(context, 30),),
-                        Text('عربه التسوق (1)',style: Textutils.fontcolor14w400.copyWith(fontSize: R.F(context, 16)),)
+                        Image.asset(Images.cart,height: R.sH(context, 30),color: Colors.white,),
+                        Text('عربه التسوق (1)',style: Textutils.hello18bold,)
                       ],
                     ),
                   ),

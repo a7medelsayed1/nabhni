@@ -7,8 +7,8 @@ class CheckoutScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar:const MainAppBar(
+    return const Scaffold(
+      appBar: MainAppBar(
         title: 'تفاصيل الشحن',
         leadingWidget: BackButton(),
       ),

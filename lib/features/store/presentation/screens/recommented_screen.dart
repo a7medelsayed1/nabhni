@@ -86,7 +86,7 @@ class _RecommentedScreenState extends State<RecommentedScreen> {
               crossAxisCount: 2, // Number of columns
               mainAxisSpacing: 8, // Vertical spacing
               crossAxisSpacing: 8, 
-              childAspectRatio: .6// Horizontal spacing
+              childAspectRatio: .58// Horizontal spacing
             ),
             itemCount: 10,
             itemBuilder: (context,index)=> StoreItemHorizontal(),

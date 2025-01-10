@@ -49,7 +49,6 @@ class Images {
   static const String horicon ="assets/images/horicon.png";
   static const String vericon ="assets/images/vericon.png";
   static const String whitecart ="assets/images/whitecart.png";
-  static const String emptycart ="assets/animations/emptycart.json.json";
   static const String noticon ="assets/images/noticon.png";
   static const String cyanheart ="assets/images/cyanheart.png";
   static const String nolocation ="assets/images/no-location.png";
@@ -67,6 +66,10 @@ class Images {
   static const String card ="assets/images/card.png";
   static const String delivery ="assets/images/Delivery.svg";
   static const String me ="assets/images/me.jpg";
+  static const String powerbank ="assets/images/power_bank.png";
+  static const String solarcells ="assets/images/Solar_cells.png";
+  static const String upsbattery ="assets/images/ups_battery.png";
+  static const String emptycart ="assets/images/empty-cart.svg";
 
 
 

@@ -44,7 +44,7 @@ static Route<dynamic> onGeneratRoute(RouteSettings settings){
     case Routes.login: return MaterialPageRoute(builder: (context)=>const LoginScreen());
     case Routes.loginsuccess: return MaterialPageRoute(builder: (context)=>const LoginSuccess());
     case Routes.location: return MaterialPageRoute(builder: (context)=>const LocationPerScreen());
-    case Routes.signup: return MaterialPageRoute(builder: (context)=>const SignupScreen());
+    case Routes.signup: return MaterialPageRoute(builder: (context)=> SignupScreen());
     case Routes.signupsecond: return MaterialPageRoute(builder: (context)=>const SignupSecond());
     case Routes.home: return MaterialPageRoute(builder: (context)=> HomeScreen());
     case Routes.phone: return MaterialPageRoute(builder: (context)=> PhoneNumScreen());

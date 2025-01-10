@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
 import 'package:nabhni/core/Route/routes.dart';
@@ -210,7 +211,7 @@ class _CartScreenState extends State<CartScreen> {
                               ],
                             ),
                           )))
-              : Expanded(child: Container(child: Lottie.asset(Images.emptycart,fit: BoxFit.contain,height: 150),)),
+              : Expanded(child: Container(child: SvgPicture.asset(Images.emptycart,fit: BoxFit.contain,height: 300),)),
           Container(
             padding: EdgeInsets.only(
                 bottom: R.sH(context, 40),

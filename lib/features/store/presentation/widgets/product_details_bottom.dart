@@ -15,7 +15,7 @@ class ProductDetailsBottom extends StatefulWidget {
   @override
   State<ProductDetailsBottom> createState() => _ProductDetailsBottomState();
 }
-int counter =0;
+int counter =1;
 class _ProductDetailsBottomState extends State<ProductDetailsBottom> {
   @override
   Widget build(BuildContext context) {

@@ -4,11 +4,12 @@ import 'package:nabhni/core/responsivity.dart';
 import 'package:nabhni/core/textutils.dart';
 
 class CustomTextfield extends StatefulWidget {
-  CustomTextfield({super.key, required this.label, this.iconpass,this.prefixicon=false,this.icon});
+  CustomTextfield({super.key, required this.label, this.iconpass,this.prefixicon=false,this.icon,this.onChanged});
   String label;
   bool? iconpass;
   bool? prefixicon;
   IconData? icon;
+  Function(String)? onChanged;
   @override
   State<CustomTextfield> createState() => _CustomTextfieldState();
 }
@@ -22,6 +23,12 @@ class _CustomTextfieldState extends State<CustomTextfield> {
     return Padding(
       padding:  EdgeInsets.all(R.sH(context,8.0)),
       child: TextFormField(
+        validator: (value) {
+          if (value!.isEmpty) {
+            return 'هذا الحقل مطلوب';
+          }
+        },
+        onChanged: widget. onChanged,
         obscureText: (passsecure== true && widget.iconpass==true )?true:false,
           decoration: InputDecoration(
               prefixIcon:widget.prefixicon==true?Icon(widget.icon):null,

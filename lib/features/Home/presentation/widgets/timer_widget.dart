@@ -13,13 +13,13 @@ class TimerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 8, bottom: 8, right: 16, left: 16),
+      padding:  EdgeInsets.only(top: R.sH(context, 8), bottom: R.sH(context, 8), right: R.sW(context, 14), left: R.sW(context, 16)),
       margin: EdgeInsets.only(
           top: R.sH(context, 16),
           bottom: R.sH(context, 24),
           right: R.sW(context, 16),
           left: R.sW(context, 16)),
-      height: R.sH(context, 131),
+      height: R.sH(context, 135),
       width: R.sW(context, double.infinity),
       decoration: BoxDecoration(
           color: Mycolors.primarycolor,
@@ -94,7 +94,7 @@ class _CircleTimerWidgetState extends State<CircleTimerWidget> {
   @override
   Widget build(BuildContext context) {
     return CircularCountDownTimer(
-      duration: 60*5,
+      duration: 30*5,
       initialDuration: 0,
       controller: _controller,
       width: R.sW(context, 115),

@@ -15,7 +15,7 @@ class CheckOutBodyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.symmetric(horizontal: R.sW(context, 20)),
+      padding:  EdgeInsets.only(right: R.sW(context, 20),left: R.sW(context, 20),bottom: R.sH(context, 20),),
       child: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -50,7 +50,7 @@ class PersonalDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(right: R.sW(context, 8)),
-      margin: EdgeInsets.symmetric(vertical: R.sH(context, 16)),
+      margin: EdgeInsets.symmetric(vertical: R.sH(context, 12)),
       height: R.sH(context, 159),
       width: R.sW(context, 353),
       decoration: BoxDecoration(

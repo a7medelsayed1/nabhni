@@ -11,7 +11,7 @@ class ShipingTax extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: R.sH(context, 12),bottom: R.sH(context, 24)),
+      margin: EdgeInsets.only(top: R.sH(context, 12),bottom: R.sH(context, 12)),
       padding: EdgeInsets.all(R.sP(context, 8)),
       height: R.sH(context, 67),
       width: R.sW(context, 353),

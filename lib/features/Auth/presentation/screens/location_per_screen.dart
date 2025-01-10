@@ -12,13 +12,17 @@ class LocationPerScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Column(children: [
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
       Padding(
         padding:  EdgeInsets.only(top: R.sH(context,120),right: R.sW(context, 16),left: R.sW(context, 16)),
         child: Center(
           child: Column(children: [
-            Align(alignment: Alignment.centerRight,child: Text("السماح بالوصول إلى الموقع",style: Textutils.logintitle,)),
-            Align(alignment: Alignment.centerRight,child: Text("اسمح لنا بمعرفة موقعك لخدمتك بشكل أفضل.",style: Textutils.suptitlebold16,)),
+            Text("السماح بالوصول إلى الموقع",style: Textutils.logintitle,),
+            Text("اسمح لنا بمعرفة موقعك لخدمتك بشكل أفضل.",style: Textutils.suptitlebold16,),
             Padding(
               padding:  EdgeInsets.only(top: R.sH(context, 35),bottom: R.sH(context, 15)),
               child: SvgPicture.asset(Images.location),

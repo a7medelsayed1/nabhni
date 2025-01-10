@@ -139,6 +139,7 @@ class _OnboardingState extends State<Onboarding> {
                           text: getLang(context,'next'),
                           route: () {
                             if (isLast == true) {
+                              
                               context.pushName(Routes.login);
                             } else {
                               boardcontroller.nextPage(

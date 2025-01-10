@@ -16,7 +16,7 @@ class AddressAdded extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(appBar: MainAppBar(
       title: 'العناوين المسجلة',
-      leadingWidget: BackButton(onPressed: () => context..pop(),),
+      leadingWidget: BackButton(onPressed: () => context.pushName(Routes.home),),
     ),
     body: Padding(padding:EdgeInsets.only(top:R.sH(context, 24),right: R.sW(context, 20),left:  R.sW(context, 20),bottom: R.sH(context, 70) ),
     child: Column(

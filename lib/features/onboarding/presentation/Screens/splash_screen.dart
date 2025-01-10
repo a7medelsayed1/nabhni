@@ -5,6 +5,7 @@ import 'package:nabhni/core/Route/routes.dart';
 import 'package:nabhni/core/extension/routes.dart';
 import 'package:nabhni/core/images.dart';
 import 'package:nabhni/core/responsivity.dart';
+import 'package:nabhni/features/onboarding/presentation/Screens/auth_gate.dart';
 
 class Splashscreen extends StatefulWidget {
   const Splashscreen({super.key});
@@ -27,6 +28,6 @@ class _Splashscreen extends State<Splashscreen> {
     );
   }
   void _navigateToHomeScreen()  {
-     Timer(const Duration(seconds: 3), ()=> context.pushName(Routes.boarding));
+     Timer(const Duration(seconds: 3), ()=> Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>AuthGate())));
   }
 }
